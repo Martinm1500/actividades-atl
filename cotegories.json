@@ -1,23 +1,23 @@
 [
   {
-    "category": "Cultura",
-    "description": "Preguntas relacionadas con arte, literatura, música y otras expresiones culturales."
+    "category": "Literatura",
+    "description": "Preguntas relacionadas con escritores, libros, novelas y poesía."
   },
   {
-    "category": "Deportes",
-    "description": "Preguntas relacionadas con diversos deportes y eventos deportivos."
+    "category": "Juegos de mesa",
+    "description": "Preguntas relacionadas con Ajedrez, Monopoly, Scrabble, juegos de cartas."
   },
   {
     "category": "Arte",
     "description": "Preguntas relacionadas con pintura, escultura, arquitectura y otras formas de expresión artística."
   },
   {
-    "category": "Cine",
-    "description": "Preguntas relacionadas con películas, directores, actores y otros aspectos del cine."
+    "category": "Actualidad",
+    "description": "Preguntas relacionadas con economía, sociedad, tecnología."
   },
   {
-    "category": "Historia",
-    "description": "Preguntas relacionadas con eventos históricos, personajes y períodos importantes."
+    "category": "Animales",
+    "description": "Preguntas relacionadas con características, clasificación y curiosidades."
   },
   {
     "category": "Ciencia",
