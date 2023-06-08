@@ -1,0 +1,74 @@
+public static void main(String[] args) {
+		adivinaElNumero();
+	}
+	
+	
+	//Ejercicio 1
+    public static void calcularEdadDePerro(){
+
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Ingresa la edad de tu perro: ");
+        int edad = scanner.nextInt();
+        int edadEnAniosPerro = edad*7;
+
+        System.out.println("Su perro tiene: " + edadEnAniosPerro + " anios de edad");
+    }
+    
+    //Ejercicio 2
+    public static void convertirDeMillasAKilometros(){
+        Scanner scanner = new Scanner(System.in);
+       
+        System.out.println("Ingresa una distancia en millas");
+        int millas = scanner.nextInt();
+        double kilometros = millas*1.60934;
+        System.out.println(millas + " millas, equivale a " + kilometros + " kilometros" );
+    }
+ 
+    //Ejercicio 3
+    public static void calcularDescuento() {
+    	System.out.println("Ingrese el precio del producto");
+    	Scanner scanner = new Scanner(System.in);
+    	double precioDelProducto = scanner.nextDouble();
+    	
+    	System.out.println("Ingrese el porcentaje de descuento");
+    	double descuento = scanner.nextDouble();
+    	
+    	double precioFinal = precioDelProducto - (precioDelProducto*descuento/100);
+    	
+    	System.out.println("El precio final es " + precioFinal);
+    }
+    
+    //Ejercicio 4
+    public static void calcularPropina() {
+    	
+    	System.out.println("Ingrese el total de la cuenta");
+    	Scanner scanner = new Scanner(System.in);
+    	double totalCuenta = scanner.nextDouble();
+    	
+    	System.out.println("Ingrese el porcentaje de propina que desea dejar");
+    	double porcentajePropina = scanner.nextDouble();
+    	
+    	double propina =  totalCuenta*(porcentajePropina/100);
+    	
+    	System.out.println("La propina que usted debe dejar es de " + propina + " dolares/pesos");
+    }
+    
+    //Ejercicio 5
+    
+    public static void adivinaElNumero() {
+    	
+    	System.out.println("Adivina el numero entre 1 y 100");
+    	Scanner scanner = new Scanner(System.in);
+    	int numeroDadoPorUsuario = scanner.nextInt();
+    	
+    	Random random = new Random();
+    	 
+    	int numeroQueAdivinar = random.nextInt(100) + 1;
+    	
+    	if(numeroDadoPorUsuario == numeroQueAdivinar) {
+    		System.out.println("Ganaste! :)");
+    	}else {
+    		System.out.println("No ganaste :(");
+    	}	
+    }
