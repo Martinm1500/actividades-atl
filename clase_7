@@ -1,0 +1,40 @@
+public static void main(String[] args){
+
+        Scanner teclado = new Scanner(System.in);
+        int[] numeros = new int[5];
+
+        for(int i = 0; i < numeros.length; i++){
+            System.out.println("Ingrese un numero: ");
+            numeros[i]  = teclado.nextInt();
+        }
+
+        System.out.println("Los numeros que ingreso son: ");
+        for(int i = 0; i < numeros.length; i++){
+         System.out.println(numeros[i]);
+        }
+
+        //mostrar mayor y menor
+        int menor = numeros[0];
+        int mayor = numeros[0];
+
+        for(int i = 0; i < numeros.length; i++){
+            if(numeros[i] < menor ){
+                menor = numeros[i];
+            }
+            if(numeros[i] > mayor){
+                mayor = numeros[i];
+            }
+        }
+
+        System.out.println("El menor es: " + menor);
+        System.out.println("El mayor es: " + mayor);
+
+        //calcular Promedio
+        double sumas = 0;
+
+        for(int i = 0; i < numeros.length ; i++){
+            sumas += numeros[i];
+        }
+
+        System.out.println("El promedio es: " + sumas/numeros.length); 
+ }
